@@ -1,0 +1,99 @@
+.droppedFiles li {
+  color: #07f;
+  padding: 3px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#drop {
+  padding: 20px;
+  padding-bottom: 900px;
+}
+
+.allService {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  background: #66b1ed;
+  margin-top: 0px;
+}
+.serviceBar {
+  padding: 4px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 10px solid transparent;
+  border-bottom: 8px solid #e06cb4;
+  margin: 10px auto;
+  background: #f0cb70;
+  outline: 1px solid #f7946a;
+  width: 300px;
+  box-shadow: 0 0 8px 0px #6a7473;
+  border-radius: 10px;
+}
+
+.mainHeading {
+  background-color: #976af7;
+  padding: 40px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  /* border-right: 26px dashed #e06cb4; */
+  /* box-shadow: 0px 2px 1px #917ee5, inset 0px 12px 1px #f0cb70; */
+  /* border-left: 200px dotted #66b1ed; */
+  /* border-bottom: 10px solid #e06cb4; */
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px, 4px 4px;
+}
+
+/*=============================================
+=            Description list            =
+=============================================*/
+
+/*=====  End of Description list  ======*/
+
+.description {
+  display: grid;
+  background: #976af7;
+  grid-template-columns: auto auto auto;
+  padding: 80px;
+}
+.descList {
+  padding: 10px;
+  color: #6c6565;
+  font-weight: 300;
+  border: 10px solid #ffffff;
+  border-bottom: 8px solid #f0cb70;
+  /* border-top: 10px solid #66b1ed; */
+  /* border-left: 10px solid #976af7; */
+  border-right: 1px solid #f7946a;
+  margin: 10px auto;
+  background: #f7f5f1;
+  text-transform: none;
+  text-transform: initial;
+  /* outline: 1px solid #abb9dd; */
+  width: 300px;
+  /* box-shadow: 0 0 8px 0px #869d9a; */
+  border-radius: 10px;
+}
+.descText {
+  text-align: justify;
+  font-family: 'Roboto';
+  color: #726a6a;
+  padding: 20px;
+}
+
+.img {
+  padding: 10px;
+  border: 2px solid #e06cb4;
+  outline: 2px dashed;
+  margin: 20px;
+  width: 80%;
+  display: none;
+}
+.descHeading {
+  color: #a3acb3;
+  text-transform: uppercase;
+  font-weight: 300;
+}

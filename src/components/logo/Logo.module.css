@@ -1,0 +1,48 @@
+.logo {
+  color: #e9ecef;
+  font-weight: lighter;
+  font-size: 30px;
+  margin: 10px 0px;
+  border: none;
+  background: transparent;
+  /* box-shadow: 0 10px 16px -7px #1d3531; */
+  width: 235px;
+  /* max-width: 235px; */
+  /* outline: 4px solid var(--primary); */
+  /* text-shadow: 2px 0 1px #400f0f; */
+  text-shadow: 2px 2px 0px, 4px 4px;
+}
+
+.logoLast {
+  /* background-color: #f0cb70; */
+  color: var(--light);
+  padding: 0 5px;
+  display: none;
+  margin-left: 1px;
+  /* border-radius: 30% 2px 2px 30%; */
+}
+.one {
+  border: 0px solid #f7946a;
+  font-weight: 600;
+  font-size: 19px;
+  background: #66b1ed;
+  color: white;
+  padding: 4px 6px 3px;
+  text-shadow: none;
+}
+
+.two {
+  color: transparent;
+  background: #f7946a;
+  padding: 4px 6px 7px;
+  font-weight: 400;
+  box-shadow: -1px 0px 4px -2px #36300b;
+  /* margin-top: 10px; */
+  text-shadow: 2px 4px 2px #ffffff;
+}
+
+@media only screen and (max-width: 769px) {
+  .logo {
+    margin: 0 auto;
+  }
+}
