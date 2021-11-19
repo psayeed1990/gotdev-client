@@ -1,0 +1,45 @@
+.sidebar li{
+    list-style-type: none;
+}
+.themeLinks a {
+display: block;
+border-left: 1px solid var(--fifth);
+padding: 9px 20px;
+margin: 1px auto;
+background: #5fbf7f;
+text-transform: uppercase;
+border-radius: 3px;
+color: #fff;
+
+}
+.sidebar {
+    padding-bottom: 100px;
+    
+}
+.sidebar li:hover .subMenu{
+    opacity: 1;
+    visibility: visible;
+}
+.subMenu {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -40px;
+    opacity: 0;
+    transition: opacity 0.7s linear;
+    z-index: 990;
+}
+
+.subMenu a {
+    background-color: var(--primary);
+    color: var(--light);
+    margin: 0;
+    box-shadow: 0 0 10px -1px #212c4f;
+    transition: background-color 0.4s linear;
+}
+.subMenu a:hover {
+    color: var(--primary);
+    background-color: var(--light);
+    margin: 0;
+    box-shadow: 0 0 10px -1px #212c4f;
+}

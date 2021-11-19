@@ -51,9 +51,9 @@ body {
 /*menu */
 #nav a {
     display: inline-block;
-    color: white;
+    color: #665f5f;
     text-decoration: none;
-    background-color: transparent;
+    background-color: #fff447;
     font-family: "ARIMO";
     padding: 13px 30px;
     margin: -2px;

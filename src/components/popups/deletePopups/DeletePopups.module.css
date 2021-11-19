@@ -1,0 +1,76 @@
+#deletePopup{
+    background-color: transparent;
+    position: fixed;
+    width: 80vw;
+	height: 80vh;
+	z-index: 999;
+	opacity: 0;
+    visibility: visible;
+    animation: showPopup 0.3s linear forwards;
+    
+}
+
+@keyframes showPopup {
+    0% {
+        opacity: 0;
+        width: 80vw;
+        height: 80vh;
+    }
+    100% {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.popupContent{
+width: max-content;
+margin: 5% auto;
+background: #e8e8e8;
+padding: 10px;
+box-shadow: 0 0 3px #2d2262;
+border-radius: 10px;
+animation: paddingUp 0.3 forwards linear;
+}
+
+@keyframes paddingUp{
+    0%{
+        padding: 10px;
+    }
+    100%{
+        padding: 50px;
+    }
+}
+
+.heading{
+color: #5d92ac;
+font-family: roboto;
+font-weight: bold;
+text-transform: uppercase;
+width: max-content;
+padding: 5px 20px;
+}
+
+.popupContent p{
+    font-family: 'arimo';
+color: var(--body-color);
+padding: 5px;
+margin: 6px auto;
+
+}
+
+.delNoBtn, .delYesBtn{
+        margin: 5px;
+    padding: 6px 15px;
+    box-shadow: 0 0 3px #444;
+    cursor: pointer;
+}
+.delYesBtn{
+    background-color: var(--secondory);
+    color: var(--light);
+}
+.delNoBtn{
+    background-color: var(--third);
+    color: var(--light);
+
+}

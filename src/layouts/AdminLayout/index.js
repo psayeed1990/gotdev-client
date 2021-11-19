@@ -8,40 +8,40 @@ import { UserContext } from "../../contexts/UserContext";
 import styles from "./AdminLayout.module.css";
 
 const AdminLayout = ({ children }) => {
-  const [loader, setLoader] = useContext(LoaderContext);
-  const [user, setUser] = useContext(UserContext);
-  const router = useRouter();
+    const [loader, setLoader] = useContext(LoaderContext);
+    const [user, setUser] = useContext(UserContext);
+    const router = useRouter();
 
-  useEffect(() => {
-    if (loader) {
-      return;
-    }
-    if (user) {
-      const admin = user.role === "admin";
-      if (!admin) {
-        return router.push("/admin/unauthorized");
-      } else {
-        return;
-      }
-    } else {
-      return router.push("/user/auth/login");
-    }
-  }, [loader, user]);
+    useEffect(() => {
+        if (loader) {
+            return;
+        }
+        if (user) {
+            const admin = user.role === "admin";
+            if (!admin) {
+                return router.push("/admin/unauthorized");
+            } else {
+                return;
+            }
+        } else {
+            return router.push("/user/auth/login");
+        }
+    }, [loader, router, user]);
 
-  return (
-    <Fragment>
-      <AdminHeader />
-      {!loader && user ? (
-        <main className={styles.AdminLayout}>
-          <AdminSidebar />
-          {children}
-        </main>
-      ) : (
-        <h1 className="heading">Fetching user...</h1>
-      )}
-      <Footer />
-    </Fragment>
-  );
+    return (
+        <Fragment>
+            <AdminHeader />
+            {!loader && user ? (
+                <main className={styles.AdminLayout}>
+                    <AdminSidebar />
+                    {children}
+                </main>
+            ) : (
+                <h1 className="heading">Fetching user...</h1>
+            )}
+            <Footer />
+        </Fragment>
+    );
 };
 
 export default AdminLayout;

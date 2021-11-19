@@ -1,0 +1,57 @@
+.lists{
+    position: relative;
+    z-index: 0;
+    padding-bottom: 900px;
+}
+.list{
+
+color: var(--light);
+font-size: 1.2rem;
+margin: 3px;
+box-shadow:0 0 14px #c8d0fb;
+}
+.left{
+    background: var(--primary);
+    text-align: left;
+    float: left;
+    padding: 0px 25px;
+    color: var(--light);
+}
+.right {
+    color: var(--light);
+    text-align: right;
+    float: right;
+}
+.show1 {
+    color: var(--primary);
+    text-align: left;
+    
+}
+.show2{
+    color: var(--primary);
+    text-align: left;
+    margin-left: 10px;
+
+}
+.name {
+font-size: .9rem;
+display: inline-block;
+text-transform: uppercase;
+color: #979292;
+}
+.value{
+display: inline-block;
+font-weight: 400;
+color: var(--body-color);
+    
+}
+.listWrapper {
+    padding: 15px;
+}
+
+.checkbox {
+    background-color: white;
+}
+._2INQH select option {
+	color: dimgray;
+}
